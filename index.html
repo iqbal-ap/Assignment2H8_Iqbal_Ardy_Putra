@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-color: aliceblue;">
+    <header class="shadow-sm mb-4" style="background-color: white;">
+        <div class="container-sm">
+            <nav class="navbar navbar-expand-sm bg-white justify-content-end">
+                <div class="container-fluid justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-end justify-content-end" id="myNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-2 active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-2">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-2">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-2">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link m-2">Inventory</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-sm bg-white p-2 m-4 rounded-3 shadow-sm">
+            <div class="d-flex flex-wrap justify-content-evenly" >
+                <div class="d-flex flex-wrap justify-content-center m-2">
+                    <div class="flex-sm-shrink m-2">
+                        <img class="img-fluid rounded-3" alt="profile-pic" src="https://picsum.photos/100" width="150" height="150" />
+                    </div>
+                    <div class="d-flex flex-column justify-content-between m-2">
+                        <div class="row-sm">
+                            <h3 class="text-center" id="profile-name">Iqbal Ardy Putra</h3>
+                            <p class="text-center" id="profile-role">Frontend Engineer</p>
+                        </div>
+                        <div class="d-flex flex-sm-row justify-content-center">
+                            <button type="button" class="btn btn-primary m-1" id="edit">Edit</button>
+                            <button type="button" class="btn btn-outline-success m-1" id="resume">Resume</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 m-2">
+                    <table class="table-sm table-borderless text-break">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Availability</th>
+                                <td id="profile-availability">Full-time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Age</th>
+                                <td id="profile-age">20</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Location</th>
+                                <td id="profile-location">South Tangerang</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">YoE</th>
+                                <td id="profile-yoe">2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td id="profile-userEmail">mine@mail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-sm bg-white rounded-3 m-4 p-2 shadow-sm">
+            <form class="needs-validation" novalidate>
+                <div class="row-sm p-2">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="form-name" placeholder="Enter your name"/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your name
+                    </div>
+                </div>
+                <div class="row-sm p-2">
+                    <label for="role" class="form-label">Role</label>
+                    <input type="text" class="form-control" id="form-role" placeholder="Job title"/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your job title
+                    </div>
+                </div>
+                <div class="row-sm p-2">
+                    <label for="availability" class="form-label">Availability</label>
+                    <input type="text" class="form-control" id="form-availability" placeholder="Full-time or Part-time"/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your availability
+                    </div>
+                </div>
+                <div class="row-sm p-2">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="form-age" placeholder="Age" required/>
+                </div>
+                <div class="row-sm p-2">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="form-location" placeholder="Your current location"/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your location
+                    </div>
+                </div>
+                <div class="row-sm p-2">
+                    <label for="yoe" class="form-label">Years of Experience</label>
+                    <input type="number" class="form-control" id="form-yoe" placeholder="Years of experience"/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your yoe
+                    </div>
+                </div>
+                <div class="row-sm p-2">
+                    <label for="userEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="form-userEmail" placeholder="yourmail@something.com" required/>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please input your valid email
+                    </div>
+                </div>
+                <div class="row-sm p-2">
+                    <button type="submit" class="btn btn-success" style="width: 100%;" value="validate">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
